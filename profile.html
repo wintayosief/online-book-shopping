@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - BookHaven</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><i class="fas fa-book-open"></i> BookHaven</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search books..." id="searchInput">
+                        <button id="searchBtn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="user-actions">
+                        <button id="loginBtn" class="btn-secondary">Login</button>
+                        <button id="cartBtn" class="btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cartCount">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-container">
+                <div class="profile-sidebar">
+                    <div class="profile-menu">
+                        <h3>My Account</h3>
+                        <ul>
+                            <li><a href="profile.html" class="active"><i class="fas fa-user"></i> Profile</a></li>
+                            <li><a href="orders.html"><i class="fas fa-shopping-bag"></i> My Orders</a></li>
+                            <li><a href="#" onclick="downloadMyBooks()"><i class="fas fa-book"></i> My Books</a></li>
+                            <li><a href="#" onclick="editProfile()"><i class="fas fa-edit"></i> Edit Profile</a></li>
+                            <li><a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <h1>My Profile</h1>
+                    
+                    <div class="profile-info">
+                        <h2>Account Information</h2>
+                        <div class="profile-field">
+                            <label>Full Name</label>
+                            <p id="profileName">-</p>
+                        </div>
+                        <div class="profile-field">
+                            <label>Email Address</label>
+                            <p id="profileEmail">-</p>
+                        </div>
+                        <div class="profile-field">
+                            <label>Member Since</label>
+                            <p id="profileMemberSince">-</p>
+                        </div>
+                        <div class="profile-field">
+                            <label>Total Orders</label>
+                            <p id="profileTotalOrders">0</p>
+                        </div>
+                        <div class="profile-field">
+                            <label>Total Spent</label>
+                            <p id="profileTotalSpent">$0.00</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-info">
+                        <h2>Support</h2>
+                        <p><strong>Need help?</strong></p>
+                        <p>Contact us at:<br>
+                            <strong>Email:</strong> wintayos23@gmail.com<br>
+                            <strong>Phone:</strong> +254759520073<br>
+                            <strong>Hours:</strong> Mon-Fri 9AM-6PM, Sat-Sun 10AM-4PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BookHaven</h3>
+                    <p>Your trusted online bookstore for all your reading needs.</p>
+                    <p><strong>Email:</strong> wintayos23@gmail.com</p>
+                    <p><strong>Phone/M-Pesa:</strong> +254759520073</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BookHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
